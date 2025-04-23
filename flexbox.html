@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image:radial-gradient(at center,hsl(194, 33%, 66%),rgb(11, 235, 71),rgb(220, 235, 71),rgb(220, 169, 201),rgb(85, 78, 177)) ;
+            /* background-image: url("https://images.unsplash.com/photo-1672577979719-450e2e75a689?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww");
+            background-repeat: no-repeat;
+            background-size: cover; */
+        }
+        .container{
+            border:2px solid green;
+            height:400px;
+            display: flex;
+            /* flex-direction:row;
+            flex-wrap: wrap; */
+            /* gap:10px; */
+            /* row-gap: 20px; */
+            /* column-gap: 10px; */
+            flex-flow:wrap row;
+            gap:10px;
+            justify-content:flex-start;
+            /* align-items: center; */
+        }
+        .box{
+            width:100px;
+            border:2px solid red;
+            margin:10px 0px;
+        }
+        #box1{
+            order:1;
+        }
+        #box2{
+            order:2;
+            flex-grow: 1;
+        }
+        #box1{
+            flex-basis:200px;
+        }
+button:hover{
+    background-color: aquamarine;
+    font-size: 20px;
+}
+h1{
+text-align: center;
+
+}
+h1::before {
+    content:"BEST";
+}
+h1::after{
+    content:"TEchonology";
+}
+    </style>
+
+</head>
+<body>
+    <h1>EXcellence</h1>
+    <div class="container">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+        <div class="box">box6</div>
+        <div class="box">box7</div>
+        <div class="box">box8</div>
+
+    </div>
+    <br>
+    <button>clickme</button>
+    <!--
+    
+    parent properties :
+    flex-direction :by default (row)
+                   :column
+                   :row-reverse
+                   :column-reverse
+
+
+    flex-wrap: wrap
+             :wrap-reverse
+
+    gap:10px ;(row gap and column gap)
+    row-gap:10px;
+    column-gap:20px;
+
+
+    flex-flow:wrap row;(combine flex-wrap and flex-direction)
+
+    justify-content:space-evenly(equally divides the childs)(works acc to main axis)
+                   :space-between (no space at left and right sides)
+                   :space-around  (space in left and right sides)
+                   :center 
+                   :flex-end
+                   :flex-start
+
+    align-items:flex-start;(works acc to cross axis)
+                :center;
+                :flex-end 
+
+    CHILD PROPERTIES
+    by default all child has order 0 ,  and the element with the highest order will be placed at the end
+
+    flex-grow : all elements have flex-grow is zero and th element placed at the end will have max flex-grow so thst ut can occupy the left  over space of parent 
+
+    flex-basis : defines the initail width  along the main axis
+
+
+    pseudo classes : used to design a specific state of an element, called with :
+    eg:hover
+
+    pseudo elements :used to style specific part of an element , are called with :: 
+    eg::before and ::after
+
+
+    -->
+</body>
+</html>
