@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            height:300px;
+            width:300px;
+            background-color: aqua;
+            border:2px solid blue;
+            /* transition: width 2s; */
+            /* transition-property: width;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+            transition-delay: 1s; */
+
+            transition:width 2s linear 0s,transform 2s;
+            box-shadow: 20px 40px 20px rgb(132, 233, 235);
+        }
+        div:hover{
+            width:400px;
+            transform: rotateZ(190deg);
+            /* transform: skewX(20deg); */
+            /* transform: scale(1,2); */
+            /* transform: translateY(20px); */
+            /* translate: 20px 30px; */
+            /* transform: skew(102deg); */
+            /* translateX():; */
+            /* translateX:20px; */
+            /* rotate: 90deg; */
+            /* background-color: blue; */
+        }
+h1{
+    text-shadow: 90px 70px 1px rgb(0, 255, 153);
+}
+
+    </style>
+</head>
+<body>
+    <script>
+        AOS.init();
+      </script>
+    <div  data-aos="zoom-in-left">
+
+    </div>
+    <h1>EXcellence</h1>
+  
+</body>
+</html>
