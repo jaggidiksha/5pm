@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .abc{
+            display: flex;
+        }
+        /* p{
+            color:green;
+        } */
+
+        @media(min-width:1024px){
+            p{
+                color:green;
+                font-size: 30px
+            }
+            h1{
+                color: red;
+                background-color: black;
+            }
+        }
+        @media(max-width:768px){
+            .abc{
+                display: block;
+            }
+            h1{
+                color: aquamarine;
+                background-color: blue;
+                text-shadow: 10px 20px 3px blueviolet ;
+            }
+            .abcc{
+                display: block;
+            }
+            p{
+                font-size:50px;
+            }
+        }
+        @media(min-width:769px) and (max-width:1023px){
+
+            p{
+                color:orange
+            }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>this is webpage which is responsive in nature</h1>
+    </center>
+
+    <div class="abc">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum temporibus dolor, aut, repellat earum ea in eligendi unde aspernatur quae tempore saepe nobis consequatur nulla eaque. Repellendus vero fugiat enim.</p>
+        <img src="https://images.unsplash.com/photo-1745750747233-c09276a878b3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMnx8fGVufDB8fHx8fA%3D%3D" alt="">
+    </div>
+    <div class="abcc">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum temporibus dolor, aut, repellat earum ea in eligendi unde aspernatur quae tempore saepe nobis consequatur nulla eaque. Repellendus vero fugiat enim.</p>
+        <img src="https://images.unsplash.com/photo-1745750747233-c09276a878b3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMnx8fGVufDB8fHx8fA%3D%3D" alt="">
+    </div>
+    <!--
+    bydefault : laptop: min-width:1024px
+
+    mobile screen size : max-width:768px
+
+    tablet : min-width:769px and max-width:1023px 
+    -->
+</body>
+</html>
