@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            border:2px solid red;
+            height:400px;
+            /* flex-direction: row;
+            flex-wrap:wrap; */
+            flex-flow:wrap row;
+            /* justify-content: space-around; */
+            /* gap:10px; */
+            /* row-gap: 10px;
+            column-gap: 20px; */
+            /* align-items:center; */
+        }
+        .box{
+            border:2px solid green;
+            width:100px;
+            margin:10px 0px;
+        }
+        #box1{
+            order:1;
+        }
+        #box2{
+            order:2;
+            flex-grow: 1;
+        }
+        #box6{
+            flex-basis: 300px;
+        }
+
+        button:hover{
+            background-color: aquamarine;
+            color: blue;
+            font-size:20px;
+        }
+        h1::before{
+            content: "$";
+        }
+
+        h1::after{
+            content:"$"
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+        <div class="box" id="box6">box6</div>
+        <div class="box">box7</div>
+        <div class="box">box8</div>
+    </div>
+<br>
+    <button>clikme</button>
+
+    <br>
+    <h1>john</h1>
+    <!--
+    flexbox model :  display:flex;
+
+    parent properties :
+   1. flex-direction : row (by default)
+                    :column
+                    :row-reverse
+                    :column-reverse
+
+    2. flex-wrap :wrap;
+                 :wrap-reverse;
+                 :nowrap;
+
+                 gap: 10px ;(row gap, column gap)
+
+    3. flex-flow: wrap row ;
+
+    4 justify-content: space-evenly;
+                     :center;
+                     :space-between;
+                     :flex-start;
+                     :flex-end ;
+                
+    5. align-items :flex-start;
+                   :flex-end;
+                   :center;
+
+
+
+    child properties 
+
+    order: by default all the childs has order 0 , child having the max order will be placed at the end 
+
+
+    flex-grow: all the childs has by default grow 0 , element having max order can be given flex-grow:1 , that child will occupy the left over space of parent 
+
+
+    flex-basis : defines the initail width of child along main axis
+
+
+
+    pseudo elements : used to style specific part of you element , called with ::
+
+
+
+    pseudo classes: defines the special state of an element , called with : 
+    -->
+
+
+    
+</body>
+</html>
