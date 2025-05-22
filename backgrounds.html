@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border:2px solid red;
+            height:400px;
+            display: flex;
+            /* flex-direction: row;
+            flex-wrap:wrap; */
+            flex-flow:wrap row;
+            /* justify-content: flex-start;
+            align-items: flex-start; */
+        }
+        .box{
+            border:2px solid green; 
+            width:100px;
+            margin:5px;
+        }
+        #box1{
+       order:1;
+        }
+        #box2{
+            order:3;
+            flex-grow:1;
+        }
+        #box6{
+            flex-basis:400px;
+        }
+        button:hover{
+            font-size: 30px;
+            background-color: aqua;
+            color: blue;
+            border-radius:20%;
+        }
+        h1::before{
+            content:"%"
+        }
+        h1::after{
+            content: "%";
+        }
+        body{
+            background-image: url("https://media.istockphoto.com/id/1049681110/photo/christmas-snowflakes-on-red-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=oJFZdk4G0IRZrzpAb24H34JJy_NFCa11LZhNJqPNa2o=");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        div{
+            height:200px;
+            border:2px solid white;
+            background-image: radial-gradient(at center,red,blue,pink,orange,green,yellow);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <!-- <h1>hello</h1>
+    <div class="container">
+        <div class="box"  id="box1">box1</div>
+        <div class="box"   id="box2">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+        <div class="box"   id="box6">box6</div>
+        <div class="box">box7</div>
+        <div class="box">box8</div>
+    </div>
+    <br><br>
+    <button>ClickMe!</button> -->
+
+    <!--
+    FLexbox model :
+
+    Parent propeties:
+    
+    1. flex-direction : row (by default);
+                     :column;
+                     :column-reverse;
+                     :row-reverse;
+            
+    2. flex-wrap:wrap;
+                :nowrap;
+                :wrap-reverse;
+
+    3. flex-flow: combination of flex-wrap and flex-direction
+
+    4.justify-content:space-evenly;
+                     :space-between;
+                     :space-around;
+                     :center;
+                     flex-end;
+                     flex-start;
+
+    5. align-items : center;
+                   :flex-start
+                   :flex-end
+
+
+    child properties :
+
+    1.order: by default all childs has order 0 ,the child having the biggest order will be placed  at the  end
+
+    2. flex-grow : the child which is placed at end can occupy the left over space of parent
+
+    3. flex-basis : defines the initail width of child along main axis
+
+
+     pseudo classes: define the specific state of an element called with :
+    pseudo elements :  used to add extra content to the elements called  with :: 
+
+
+
+
+    background-image :image  
+
+                    :colors
+
+                    linear-gradient(to left,c,c,c)
+                    conic-gradient(at center,c,c,c)
+                    radial-gradient(at left ,c,c,c)
+
+                    html colors:
+                    rgb  :red green blue
+                    hex : hexadecimal
+                    hsl:hue saturation lightness
+
+    -->
+</body>
+
+</html>
