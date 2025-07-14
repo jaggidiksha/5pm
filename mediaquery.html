@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     div{
+                display: flex;
+                gap:20px;
+            }
+            img{
+                width:800px;
+            }
+        @media (min-width:1024px){
+            h1{
+                color:red;
+                  text-align: center;
+                  background-color: rgb(11, 11, 11);
+            }
+           p{
+            color:red;
+            font-size:20px;
+           }
+        }
+
+        @media(max-width:768px){
+             div{
+              display: block;  
+             }
+             img{
+                height: auto;
+                width:100%;
+                box-shadow: 10px 2px 2px green;
+             }
+             p{
+                color: blue;
+                background-color: pink;
+                font-size:40px;
+                font-weight: bold;
+             }
+             h1{
+               text-shadow: 10px 20px 10px orange ; 
+               text-align: center;
+               font-size: 80px;
+           color: rgb(184, 29, 245);
+             }
+        }
+
+        @media (min-width:769px)  and (max-width:1023px){
+
+            h1{
+                text-shadow: 12px 12px 10px blue;
+                text-align: center;
+                background-color: aqua;
+                
+            }
+            p{
+                color:rgb(38, 61, 3);
+                background-color: rgb(247, 247, 207);
+                font-size:30px;
+                font-weight: bold;
+            }
+        }
+
+        a{
+            text-decoration: none;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Home</a>
+    <h1>excellence technology</h1>
+    <div class="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGB5JDybJ1uxs0tSayOZ2OMaeAw3IUt1us3w&s" alt="">
+        <p>An Advanced Web Education and Software Development Company.
+Excellence Technology is a Professional Company for providing Web education and AdvancedÂ 6 Months & Weeks Industrial Training Company in Chandigarh, MohaliÂ and Panchkula. Excellence Technology is a leading Software Development company.</p>
+    </div>
+    <!--
+    responsiveness : media query 
+
+    @media
+
+    laptop screen size :  min-width :1024px 
+
+    mobile screen size : max-width:768px;
+
+    tablet screen size : min-width:769px   and max-width:1023px;
+    -->
+</body>
+</html>
